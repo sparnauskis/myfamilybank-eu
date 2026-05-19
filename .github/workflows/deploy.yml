@@ -126,5 +126,11 @@ jobs:
             sudo systemctl daemon-reload
             sudo systemctl enable "$SERVICE_NAME"
             sudo systemctl restart "$SERVICE_NAME"
+            sleep 5
             sudo systemctl status "$SERVICE_NAME" --no-pager
-
+            sudo ss -ltnp | grep ":$APP_PORT" || true
+            if ! curl -fsS "http://127.0.0.1:$APP_PORT/" >/tmp/myfamilybank-health.html; then
+              sudo journalctl -u "$SERVICE_NAME" -n 120 --no-pager
+              exit 1
+            fi
+            head -c 200 /tmp/myfamilybank-health.html
