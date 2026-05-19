@@ -62,6 +62,7 @@ jobs:
             cd "$APP_DIR"
             npm ci
             npm run build
+            NPM_BIN="$(command -v npm)"
 
             cat <<EOF | sudo tee "$ENV_FILE" >/dev/null
             NODE_ENV=production
@@ -85,7 +86,7 @@ jobs:
             Type=simple
             WorkingDirectory=$APP_DIR
             EnvironmentFile=$ENV_FILE
-            ExecStart=/usr/bin/npm run start -- --hostname 127.0.0.1 --port $APP_PORT
+            ExecStart=$NPM_BIN run start -- --hostname 127.0.0.1 --port $APP_PORT
             Restart=always
             RestartSec=5
             User=www-data
@@ -127,7 +128,7 @@ jobs:
             sudo systemctl enable "$SERVICE_NAME"
             sudo systemctl restart "$SERVICE_NAME"
             sleep 5
-            sudo systemctl status "$SERVICE_NAME" --no-pager
+            sudo systemctl status "$SERVICE_NAME" --no-pager || true
             sudo ss -ltnp | grep ":$APP_PORT" || true
             if ! curl -fsS "http://127.0.0.1:$APP_PORT/" >/tmp/myfamilybank-health.html; then
               sudo journalctl -u "$SERVICE_NAME" -n 120 --no-pager
