@@ -1,0 +1,130 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  APP_DIR: /var/www/myfamilybank
+  SERVICE_NAME: myfamilybank
+  ENV_FILE: /etc/myfamilybank.env
+  APP_PORT: 3019
+  DOMAIN: myfamilybank.eu
+  WWW_DOMAIN: www.myfamilybank.eu
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload app files
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          source: ".env.example,.gitignore,README.md,next-env.d.ts,next.config.mjs,package.json,package-lock.json,postcss.config.js,public,src,tailwind.config.ts,tsconfig.json"
+          target: "${{ env.APP_DIR }}"
+          rm: true
+          strip_components: 0
+
+      - name: Install, build and restart service
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT || 22 }}
+          script: |
+            set -e
+            APP_DIR="${{ env.APP_DIR }}"
+            SERVICE_NAME="${{ env.SERVICE_NAME }}"
+            ENV_FILE="${{ env.ENV_FILE }}"
+            APP_PORT="${{ env.APP_PORT }}"
+            DOMAIN="${{ env.DOMAIN }}"
+            WWW_DOMAIN="${{ env.WWW_DOMAIN }}"
+
+            if ! command -v node >/dev/null 2>&1 || [ "$(node -v | sed 's/v//' | cut -d. -f1)" -lt 20 ]; then
+              curl -fsSL https://deb.nodesource.com/setup_22.x | sudo bash -
+              sudo apt install -y nodejs
+            fi
+
+            sudo apt update
+            sudo apt install -y nginx certbot python3-certbot-nginx
+
+            cd "$APP_DIR"
+            npm ci
+            npm run build
+
+            cat <<EOF | sudo tee "$ENV_FILE" >/dev/null
+            NODE_ENV=production
+            PORT=$APP_PORT
+            BANK_BASE_URL=https://seimosbankas.lt
+            NEXT_PUBLIC_BANK_BASE_URL=https://seimosbankas.lt
+            EOF
+            sudo chmod 600 "$ENV_FILE"
+            sudo chown www-data:www-data "$ENV_FILE"
+
+            sudo chown -R www-data:www-data "$APP_DIR"
+            sudo find "$APP_DIR" -type d -exec chmod 755 {} \;
+            sudo find "$APP_DIR" -type f -exec chmod 644 {} \;
+
+            cat <<EOF | sudo tee "/etc/systemd/system/$SERVICE_NAME.service" >/dev/null
+            [Unit]
+            Description=MyFamilyBank.eu Next.js app
+            After=network.target
+
+            [Service]
+            Type=simple
+            WorkingDirectory=$APP_DIR
+            EnvironmentFile=$ENV_FILE
+            ExecStart=/usr/bin/npm run start -- --hostname 127.0.0.1 --port $APP_PORT
+            Restart=always
+            RestartSec=5
+            User=www-data
+            Group=www-data
+            NoNewPrivileges=true
+            PrivateTmp=true
+
+            [Install]
+            WantedBy=multi-user.target
+            EOF
+
+            cat <<EOF | sudo tee "/etc/nginx/sites-available/$SERVICE_NAME" >/dev/null
+            server {
+                listen 80;
+                server_name $DOMAIN $WWW_DOMAIN;
+
+                location / {
+                    proxy_pass http://127.0.0.1:$APP_PORT;
+                    proxy_http_version 1.1;
+                    proxy_set_header Host \$host;
+                    proxy_set_header X-Real-IP \$remote_addr;
+                    proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+                    proxy_set_header X-Forwarded-Proto \$scheme;
+                    proxy_set_header Upgrade \$http_upgrade;
+                    proxy_set_header Connection "upgrade";
+                }
+            }
+            EOF
+
+            sudo ln -sf "/etc/nginx/sites-available/$SERVICE_NAME" "/etc/nginx/sites-enabled/$SERVICE_NAME"
+            sudo nginx -t
+            sudo systemctl reload nginx
+
+            if [ ! -f "/etc/letsencrypt/live/$DOMAIN/fullchain.pem" ]; then
+              sudo certbot --nginx -d "$DOMAIN" -d "$WWW_DOMAIN" --non-interactive --agree-tos --register-unsafely-without-email --redirect
+            fi
+
+            sudo systemctl daemon-reload
+            sudo systemctl enable "$SERVICE_NAME"
+            sudo systemctl restart "$SERVICE_NAME"
+            sudo systemctl status "$SERVICE_NAME" --no-pager
+

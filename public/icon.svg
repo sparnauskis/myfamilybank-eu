@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="MyFamilyBank">
+  <rect width="128" height="128" rx="32" fill="#31533f"/>
+  <g fill="none" stroke="#fff8ec" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M53 78h12a10 10 0 0 0 0-20H49c-5 0-9 2-12 6L18 84"/>
+    <path d="m31 103 11-10c3-3 7-5 12-5h20c7 0 13-3 18-8l23-22a10 10 0 0 0-14-14L80 64"/>
+    <path d="m14 80 29 29"/>
+    <circle cx="86" cy="42" r="14"/>
+    <circle cx="38" cy="30" r="15"/>
+  </g>
+</svg>
