@@ -78,6 +78,7 @@ jobs:
             sudo find "$APP_DIR" -type d -exec chmod 755 {} \;
             sudo find "$APP_DIR" -type f -exec chmod 644 {} \;
             sudo find "$APP_DIR/node_modules/.bin" -type f -exec chmod 755 {} \;
+            sudo chmod 755 "$APP_DIR/node_modules/next/dist/bin/next"
 
             cat <<EOF | sudo tee "/etc/systemd/system/$SERVICE_NAME.service" >/dev/null
             [Unit]
