@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "MyFamilyBank",
-    short_name: "FamilyBank",
+    name: "BanqueDeFamille",
+    short_name: "FamilleBank",
     description:
-      "An educational family finance Progressive Web App for pocket money, saving rules, family agreements and a safe sandbox demo.",
+      "Une Progressive Web App d'education financiere familiale pour l'argent de poche, l'epargne, les accords familiaux et une demo sandbox securisee.",
     start_url: "/",
     scope: "/",
     display: "standalone",

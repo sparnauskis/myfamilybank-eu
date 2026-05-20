@@ -6,12 +6,12 @@ const nextConfig = {
     return [
       {
         source: "/sandbox",
-        destination: `${bankBaseUrl}/sandbox?brand=myfamilybank&lang=en`,
+        destination: `${bankBaseUrl}/sandbox?brand=banquedefamille&lang=fr`,
         permanent: false
       },
       {
         source: "/register",
-        destination: `${bankBaseUrl}/register?brand=myfamilybank&lang=en`,
+        destination: `${bankBaseUrl}/register?brand=banquedefamille&lang=fr`,
         permanent: false
       },
       {

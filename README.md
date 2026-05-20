@@ -1,6 +1,6 @@
-# MyFamilyBank.eu
+# BanqueDeFamille.fr
 
-Standalone English landing page for MyFamilyBank.eu.
+Standalone French landing page for BanqueDeFamille.fr.
 
 The landing page is intentionally separate from the existing SeimosBankas codebase. Bank and Sandbox entry points are connected through redirects configured in `next.config.mjs`.
 
@@ -28,15 +28,15 @@ NEXT_PUBLIC_BANK_BASE_URL=https://seimosbankas.lt
 
 Current routes:
 
-- `/sandbox` redirects to `${BANK_BASE_URL}/sandbox?brand=myfamilybank&lang=en`
-- `/register` redirects to `${BANK_BASE_URL}/register?brand=myfamilybank&lang=en`
+- `/sandbox` redirects to `${BANK_BASE_URL}/sandbox?brand=banquedefamille&lang=fr`
+- `/register` redirects to `${BANK_BASE_URL}/register?brand=banquedefamille&lang=fr`
 - `/bank/:path*` redirects to `${BANK_BASE_URL}/:path*`
 
-When the bank app supports `brand=myfamilybank`, it can render the English Sandbox and registration flow from the same backend.
+When the bank app supports `brand=banquedefamille`, it can render the French Sandbox and registration flow from the same backend.
 
 ## SEO Articles
 
-The English article layer is static and pre-rendered for SEO:
+The French article layer is static and pre-rendered for SEO:
 
 - `/articles`
 - `/articles/[slug]`

@@ -8,12 +8,13 @@ on:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  APP_DIR: /var/www/myfamilybank
-  SERVICE_NAME: myfamilybank
-  ENV_FILE: /etc/myfamilybank.env
-  APP_PORT: 3019
-  DOMAIN: myfamilybank.eu
-  WWW_DOMAIN: www.myfamilybank.eu
+  NODE_OPTIONS: --max-old-space-size=4096
+  APP_DIR: /var/www/banquedefamille
+  SERVICE_NAME: banquedefamille
+  ENV_FILE: /etc/banquedefamille.env
+  APP_PORT: 3020
+  DOMAIN: banquedefamille.fr
+  WWW_DOMAIN: www.banquedefamille.fr
 
 jobs:
   deploy:
@@ -80,7 +81,7 @@ jobs:
 
             cat <<EOF | sudo tee "/etc/systemd/system/$SERVICE_NAME.service" >/dev/null
             [Unit]
-            Description=MyFamilyBank.eu Next.js app
+            Description=BanqueDeFamille.fr Next.js app
             After=network.target
 
             [Service]
@@ -174,8 +175,8 @@ jobs:
             sleep 5
             sudo systemctl status "$SERVICE_NAME" --no-pager || true
             sudo ss -ltnp | grep ":$APP_PORT" || true
-            if ! curl -fsS "http://127.0.0.1:$APP_PORT/" >/tmp/myfamilybank-health.html; then
+            if ! curl -fsS "http://127.0.0.1:$APP_PORT/" >/tmp/banquedefamille-health.html; then
               sudo journalctl -u "$SERVICE_NAME" -n 120 --no-pager
               exit 1
             fi
-            head -c 200 /tmp/myfamilybank-health.html
+            head -c 200 /tmp/banquedefamille-health.html

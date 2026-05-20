@@ -21,31 +21,31 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
   if (!article) {
     return {
-      title: "Article not found | MyFamilyBank"
+      title: "Article introuvable | BanqueDeFamille"
     };
   }
 
   return {
-    title: `${article.title} | MyFamilyBank`,
+    title: `${article.title} | BanqueDeFamille`,
     description: article.description,
     alternates: {
       canonical: `/articles/${article.slug}`,
       languages: {
-        en: `https://myfamilybank.eu/articles/${article.slug}`,
-        "x-default": `https://myfamilybank.eu/articles/${article.slug}`,
+        fr: `https://banquedefamille.fr/articles/${article.slug}`,
+        "x-default": `https://banquedefamille.fr/articles/${article.slug}`,
         ...(article.originalLtUrl ? { lt: article.originalLtUrl } : {})
       }
     },
     openGraph: {
       title: article.title,
       description: article.description,
-      url: `https://myfamilybank.eu/articles/${article.slug}`,
+      url: `https://banquedefamille.fr/articles/${article.slug}`,
       type: "article",
-      siteName: "MyFamilyBank",
-      locale: "en_GB",
+      siteName: "BanqueDeFamille",
+      locale: "fr_FR",
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt,
-      authors: ["MyFamilyBank"],
+      authors: ["BanqueDeFamille"],
       images: [
         {
           url: "/og-image.svg",
@@ -79,17 +79,17 @@ export default function ArticlePage({ params }: ArticlePageProps) {
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt,
-    inLanguage: "en",
+    inLanguage: "fr",
     author: {
       "@type": "Organization",
-      name: "MyFamilyBank"
+      name: "BanqueDeFamille"
     },
     publisher: {
       "@type": "Organization",
-      name: "MyFamilyBank",
-      url: "https://myfamilybank.eu"
+      name: "BanqueDeFamille",
+      url: "https://banquedefamille.fr"
     },
-    mainEntityOfPage: `https://myfamilybank.eu/articles/${article.slug}`
+    mainEntityOfPage: `https://banquedefamille.fr/articles/${article.slug}`
   };
 
   return (
@@ -100,7 +100,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
       <article className="mx-auto max-w-4xl px-5 pb-20 pt-8 md:px-8 md:pt-14">
         <Link href="/articles" className="inline-flex items-center gap-2 text-sm font-black text-moss hover:text-coral">
           <ArrowLeft size={17} />
-          All articles
+          Tous les articles
         </Link>
 
         <header className="mt-10">
@@ -138,25 +138,27 @@ export default function ArticlePage({ params }: ArticlePageProps) {
         </div>
 
         <section className="mt-12 rounded-[28px] bg-moss p-7 text-white md:p-9">
-          <p className="text-sm font-black uppercase tracking-[0.22em] text-white/45">Put it into practice</p>
-          <h2 className="mt-3 text-3xl font-black tracking-normal">Try a demo family bank in the Sandbox.</h2>
+          <p className="text-sm font-black uppercase tracking-[0.22em] text-white/45">Passez a la pratique</p>
+          <h2 className="mt-3 text-3xl font-black tracking-normal">
+            Essayez une banque familiale de demonstration dans le Sandbox.
+          </h2>
           <p className="mt-4 max-w-2xl leading-7 text-white/75">
-            Explore pocket money, saving rules and parent approvals before creating your own family bank.
-            It works in the browser as a Progressive Web App, with a mobile app feel and no app store download.
-            No email, phone number,
-            real names or real banking details are required for the demo flow.
+            Explorez l'argent de poche, les regles d'epargne et les validations parentales avant de creer votre propre
+            banque familiale. Cela fonctionne dans le navigateur comme une Progressive Web App, avec une sensation
+            d'application mobile et sans telechargement depuis un app store. Aucun e-mail, numero de telephone, nom reel
+            ou detail bancaire reel n'est requis pour le parcours de demo.
           </p>
           <Link
             href="/sandbox"
             className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-base font-black text-moss transition hover:bg-cream"
           >
-            Open Sandbox <ArrowRight size={20} />
+            Ouvrir le Sandbox <ArrowRight size={20} />
           </Link>
         </section>
 
         {related.length > 0 && (
           <section className="mt-14">
-            <h2 className="text-2xl font-black text-ink">Related articles</h2>
+            <h2 className="text-2xl font-black text-ink">Articles lies</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-3">
               {related.map((item) => (
                 <Link

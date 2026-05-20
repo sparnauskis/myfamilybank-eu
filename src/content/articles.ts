@@ -18,494 +18,494 @@ const publishedAt = "2026-05-20";
 
 export const articles: Article[] = [
   {
-    slug: "pocket-money-without-arguments",
-    title: "Pocket Money Without Daily Arguments",
-    description: "A simple family rhythm for pocket money, requests and calmer financial conversations at home.",
-    category: "Pocket money",
-    readingTime: "6 min read",
+    slug: "argent-de-poche-sans-disputes",
+    title: "L'argent de poche sans disputes quotidiennes",
+    description: "Un rythme familial simple pour l'argent de poche, les demandes et des conversations plus calmes.",
+    category: "Argent de poche",
+    readingTime: "6 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     originalLtUrl: "https://seimosbankas.lt/metodika/pirmadienio-algoritmas",
     intro:
-      "Pocket money often turns into daily arguments because every request starts from zero. A weekly rhythm changes the question from negotiation to planning.",
+      "L'argent de poche devient souvent une dispute quotidienne parce que chaque demande repart de zero. Un rythme hebdomadaire transforme la negotiation en plan.",
     sections: [
       {
-        heading: "Why daily requests become tiring",
+        heading: "Pourquoi les demandes quotidiennes fatiguent",
         body: [
-          "A child asks for money because a need appears now. A parent answers from a different context: budget, mood, timing, and memory of previous requests. That gap creates friction.",
-          "The problem is rarely the amount itself. The problem is that the family has no shared place where expectations are visible before the request happens."
+          "Un enfant demande de l'argent parce qu'un besoin apparait maintenant. Le parent repond depuis un autre contexte : budget, humeur, timing et souvenir des demandes precedentes.",
+          "Le probleme est rarement le montant lui-meme. Le probleme vient du fait que la famille n'a pas de lieu commun ou les attentes sont visibles avant la demande."
         ]
       },
       {
-        heading: "Create one weekly check-in",
+        heading: "Creez un rendez-vous hebdomadaire",
         body: [
-          "Choose one weekly time for money decisions. Ten minutes is enough. Look at pocket money, saving rules, planned spending and any pending requests.",
-          "When children know that money has a regular place in the family week, they do not need to test the boundary every day."
+          "Choisissez un moment fixe chaque semaine pour les decisions d'argent. Dix minutes suffisent pour regarder l'argent de poche, les regles d'epargne, les depenses prevues et les demandes en attente.",
+          "Quand les enfants savent que l'argent a une place reguliere dans la semaine familiale, ils ont moins besoin de tester la limite tous les jours."
         ]
       },
       {
-        heading: "Keep the rules small",
+        heading: "Gardez de petites regles",
         body: [
-          "Start with three rules: how much pocket money arrives, what needs approval, and what part should stay untouched for later.",
-          "Avoid turning the system into a lecture. The aim is not to control every choice. The aim is to make choices visible enough for conversation."
+          "Commencez par trois regles : combien arrive, ce qui demande une validation, et quelle part reste de cote pour plus tard.",
+          "Le but n'est pas de controler chaque choix. Le but est de rendre les choix assez visibles pour pouvoir en parler calmement."
         ]
       },
       {
-        heading: "Use the same screen",
+        heading: "Utilisez le meme ecran",
         body: [
-          "A shared family money dashboard helps because parent and child can point to the same facts. Balance, request and rule are all visible.",
-          "That shared view lowers the emotional temperature. The parent is not making up an answer. The child is not guessing the rule."
+          "Un tableau familial aide parce que parent et enfant peuvent regarder les memes faits : solde, demande et regle.",
+          "Cette vue partagee baisse la temperature emotionnelle. Le parent n'invente pas une reponse, et l'enfant ne devine pas la regle."
         ]
       }
     ]
   },
   {
-    slug: "teaching-children-to-save",
-    title: "Teaching Children To Save Without Lectures",
-    description: "How to make saving visible and practical without tracking every child wish.",
-    category: "Saving",
-    readingTime: "7 min read",
+    slug: "apprendre-aux-enfants-a-epargner",
+    title: "Apprendre aux enfants a epargner sans faire la morale",
+    description: "Comment rendre l'epargne visible et pratique sans suivre chaque envie de l'enfant.",
+    category: "Epargne",
+    readingTime: "7 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Children learn saving when they can see the effect of waiting. Abstract advice is weak. Visible balances and stable rules are stronger.",
+      "Les enfants apprennent a epargner lorsqu'ils voient l'effet de l'attente. Les conseils abstraits sont faibles ; les soldes visibles et les regles stables sont plus forts.",
     sections: [
       {
-        heading: "Saving needs a visible balance",
+        heading: "L'epargne a besoin d'un solde visible",
         body: [
-          "For adults, saving can be an idea. For children, saving works better when the available balance is easy to read.",
-          "The product does not need to know what the child might buy. The number itself becomes meaningful when it changes after spending, waiting or requesting."
+          "Pour un adulte, epargner peut rester une idee. Pour un enfant, cela fonctionne mieux quand le solde disponible est facile a lire.",
+          "Le produit n'a pas besoin de connaitre tout ce que l'enfant veut acheter. Le nombre devient parlant lorsqu'il change apres une depense, une attente ou une demande."
         ]
       },
       {
-        heading: "Separate saving from punishment",
+        heading: "Separez epargne et punition",
         body: [
-          "Saving should not feel like losing money. If every saved euro feels like something taken away, the child learns resistance, not patience.",
-          "Frame saving as choosing future freedom. The family bank can show the balance and the rule so the child sees both sides."
+          "Epargner ne doit pas ressembler a perdre de l'argent. Si chaque euro garde de cote semble confisque, l'enfant apprend la resistance, pas la patience.",
+          "Presentez l'epargne comme un choix de liberte future. La banque familiale peut montrer le solde et la regle pour rendre les deux cotes visibles."
         ]
       },
       {
-        heading: "Reward consistency, not perfection",
+        heading: "Recompensez la regularite",
         body: [
-          "A small saving habit repeated weekly matters more than one perfect decision. Children need the experience of returning to the same rule after normal spending.",
-          "If you use a bonus or interest rule, keep it simple. The child should understand why the balance grows."
+          "Une petite habitude repetee chaque semaine compte plus qu'une decision parfaite. Les enfants ont besoin de revenir a la meme regle apres des depenses normales.",
+          "Si vous utilisez un bonus ou une regle d'interet, gardez-la simple. L'enfant doit comprendre pourquoi le solde augmente."
         ]
       },
       {
-        heading: "Talk after the choice",
+        heading: "Parlez apres le choix",
         body: [
-          "The best teaching moment often comes after a child spends. Did the purchase feel worth it? What changed about the balance?",
-          "Those reflections build judgement. The family system should support the conversation, not replace it."
+          "Le meilleur moment d'apprentissage arrive souvent apres une depense. L'achat valait-il le coup ? Qu'est-ce qui a change dans le solde ?",
+          "Ces reflexions construisent le jugement. Le systeme familial doit soutenir la conversation, pas la remplacer."
         ]
       }
     ]
   },
   {
-    slug: "family-money-agreements",
-    title: "Family Money Agreements That Children Understand",
-    description: "A practical guide to turning pocket money rules into a clear parent-child agreement.",
-    category: "Agreements",
-    readingTime: "8 min read",
+    slug: "accords-dargent-en-famille",
+    title: "Des accords d'argent que les enfants comprennent",
+    description: "Un guide pratique pour transformer les regles d'argent de poche en accord parent-enfant clair.",
+    category: "Accords",
+    readingTime: "8 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "A family money agreement is not a legal document. It is a shared promise about how money decisions happen at home.",
+      "Un accord d'argent familial n'est pas un document juridique. C'est une promesse partagee sur la facon dont les decisions d'argent se prennent a la maison.",
     sections: [
       {
-        heading: "Write rules in child language",
+        heading: "Ecrivez les regles dans la langue de l'enfant",
         body: [
-          "If a child cannot repeat the rule, the rule is too complicated. Use everyday language: what arrives, when it arrives, what needs approval, and what happens after a request.",
-          "Short rules are easier to remember and easier to keep. They also make it less likely that the parent will change the rule in the heat of the moment."
+          "Si un enfant ne peut pas repeter la regle, elle est trop compliquee. Utilisez des mots du quotidien : ce qui arrive, quand cela arrive, ce qui demande une validation et ce qui se passe apres une demande.",
+          "Les regles courtes sont plus faciles a retenir et a respecter. Elles reduisent aussi le risque que le parent change la regle sous le coup de l'emotion."
         ]
       },
       {
-        heading: "Include both rights and responsibilities",
+        heading: "Incluez droits et responsabilites",
         body: [
-          "A good agreement gives the child real room to decide. It also names the responsibility that comes with that room.",
-          "For example: the child can choose small spending from available money, but larger withdrawals require a request and a reason."
+          "Un bon accord donne a l'enfant un vrai espace de decision. Il nomme aussi la responsabilite qui vient avec cet espace.",
+          "Par exemple : l'enfant peut choisir de petites depenses avec l'argent disponible, mais les retraits plus importants demandent une raison et une validation."
         ]
       },
       {
-        heading: "Review instead of rewriting constantly",
+        heading: "Revisez sans tout reecrire",
         body: [
-          "Rules should be stable enough to create trust. If everything changes every week, the system becomes another negotiation.",
-          "Set a review rhythm. Once a month is often enough. The child can suggest changes, but the family avoids daily rule changes."
+          "Les regles doivent etre assez stables pour creer la confiance. Si tout change chaque semaine, le systeme devient une nouvelle negotiation.",
+          "Fixez un rythme de revue. Une fois par mois suffit souvent. L'enfant peut proposer des changements, mais la famille evite les modifications quotidiennes."
         ]
       },
       {
-        heading: "Let the agreement live in the product",
+        heading: "Laissez l'accord vivre dans le produit",
         body: [
-          "When the agreement is visible next to balances and requests, it becomes part of normal use.",
-          "That is much stronger than a forgotten conversation. The rule appears at the moment it matters."
+          "Quand l'accord est visible a cote des soldes et des demandes, il devient une partie normale de l'utilisation.",
+          "C'est beaucoup plus fort qu'une conversation oubliee. La regle apparait au moment ou elle compte."
         ]
       }
     ]
   },
   {
-    slug: "financial-literacy-for-kids-at-home",
-    title: "Financial Literacy For Kids Starts At Home",
-    description: "Why everyday family money decisions teach more than abstract financial education.",
-    category: "Financial literacy",
-    readingTime: "7 min read",
+    slug: "education-financiere-enfants-maison",
+    title: "L'education financiere des enfants commence a la maison",
+    description: "Pourquoi les decisions d'argent du quotidien enseignent plus que les cours abstraits.",
+    category: "Education financiere",
+    readingTime: "7 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Financial literacy is not only knowledge about banks, cards or interest. For children, it starts with repeated experiences at home.",
+      "L'education financiere n'est pas seulement une connaissance des banques, cartes ou interets. Pour les enfants, elle commence par des experiences repetees a la maison.",
     sections: [
       {
-        heading: "Children copy money behaviour",
+        heading: "Les enfants copient les comportements d'argent",
         body: [
-          "Children notice how adults speak about bills, shopping, debt, saving and stress. They build a money model long before they understand financial terms.",
-          "This is why a calm family money routine matters. It gives the child a different pattern to copy."
+          "Les enfants observent comment les adultes parlent des factures, des courses, des dettes, de l'epargne et du stress. Ils construisent un modele bien avant de comprendre les termes financiers.",
+          "C'est pourquoi une routine familiale calme compte. Elle donne a l'enfant un autre modele a copier."
         ]
       },
       {
-        heading: "Use real decisions, small amounts",
+        heading: "Utilisez de vraies decisions, avec de petits montants",
         body: [
-          "Small amounts are enough for learning. A child does not need access to real financial risk to understand trade-offs.",
-          "Pocket money, saving rules and requests create a safe practice field where mistakes stay small."
+          "De petits montants suffisent pour apprendre. Un enfant n'a pas besoin d'un vrai risque financier pour comprendre les arbitrages.",
+          "L'argent de poche, les regles d'epargne et les demandes creent un terrain d'entrainement ou les erreurs restent petites."
         ]
       },
       {
-        heading: "Teach cause and effect",
+        heading: "Enseignez la cause et l'effet",
         body: [
-          "If I spend this now, I have less later. If I wait, my balance stays stronger. If I request money, I need to explain why.",
-          "Those simple cause-and-effect loops are the foundation of financial judgement."
+          "Si je depense maintenant, j'ai moins plus tard. Si j'attends, mon solde reste plus fort. Si je demande de l'argent, j'explique pourquoi.",
+          "Ces boucles simples de cause a effet sont la base du jugement financier."
         ]
       },
       {
-        heading: "Make money easier to talk about",
+        heading: "Rendez l'argent plus facile a aborder",
         body: [
-          "Many families avoid money conversations because they feel tense. A shared system makes the topic more ordinary.",
-          "When money becomes easier to talk about, children can ask better questions and parents can answer before problems grow."
+          "Beaucoup de familles evitent les conversations d'argent parce qu'elles semblent tendues. Un systeme partage rend le sujet plus ordinaire.",
+          "Quand il devient plus facile de parler d'argent, les enfants posent de meilleures questions et les parents repondent avant que les problemes grossissent."
         ]
       }
     ]
   },
   {
-    slug: "child-saving-habits",
-    title: "How To Build Child Saving Habits That Actually Last",
-    description: "A practical framework for teaching children to leave money for later without tracking every wish.",
-    category: "Saving",
-    readingTime: "6 min read",
+    slug: "habitudes-epargne-enfant",
+    title: "Construire des habitudes d'epargne qui durent vraiment",
+    description: "Un cadre pratique pour apprendre aux enfants a garder de l'argent pour plus tard.",
+    category: "Epargne",
+    readingTime: "6 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Saving works best when it becomes a repeatable habit, not a catalogue of things a child might want next month.",
+      "L'epargne fonctionne mieux lorsqu'elle devient une habitude repetable, pas un catalogue de choses que l'enfant pourrait vouloir le mois prochain.",
     sections: [
       {
-        heading: "Do not track every wish",
+        heading: "Ne suivez pas chaque envie",
         body: [
-          "Children change their minds quickly. Prices change too. A family money system does not need to know every toy, trip or gadget a child is thinking about.",
-          "It is enough to make the available balance visible and keep a simple rule for what stays for later."
+          "Les enfants changent vite d'avis. Les prix changent aussi. Un systeme familial n'a pas besoin de connaitre chaque jouet, sortie ou gadget auquel l'enfant pense.",
+          "Il suffit de rendre le solde disponible visible et de garder une regle simple pour ce qui reste de cote."
         ]
       },
       {
-        heading: "Make later visible",
+        heading: "Rendez le plus tard visible",
         body: [
-          "For a child, saving is hard because later feels abstract. A visible balance helps them see that not spending is still an active choice.",
-          "The product can support this without asking the family to maintain a list of future purchases."
+          "Pour un enfant, epargner est difficile parce que plus tard reste abstrait. Un solde visible aide a voir que ne pas depenser est aussi un choix actif.",
+          "Le produit peut soutenir cela sans demander a la famille de maintenir une liste d'achats futurs."
         ]
       },
       {
-        heading: "Use simple saving rules",
+        heading: "Utilisez des regles simples",
         body: [
-          "A family might agree that part of pocket money stays untouched until the weekly check-in, or that larger withdrawals need parent approval.",
-          "The exact rule matters less than the rhythm. Children learn when the rule is stable and easy to remember."
+          "Une famille peut decider qu'une part de l'argent de poche reste intacte jusqu'au rendez-vous hebdomadaire, ou que les retraits plus grands demandent une validation parentale.",
+          "La regle exacte compte moins que le rythme. Les enfants apprennent lorsque la regle est stable et facile a retenir."
         ]
       },
       {
-        heading: "Talk about trade-offs",
+        heading: "Parlez des arbitrages",
         body: [
-          "When a child wants to spend, the useful question is not always what they are saving for. It is what changes after this choice.",
-          "That keeps the conversation practical without turning the family bank into a wishlist tracker."
+          "Quand l'enfant veut depenser, la question utile n'est pas toujours ce qu'il veut acheter plus tard. C'est ce qui change apres ce choix.",
+          "Cela garde la conversation pratique sans transformer la banque familiale en liste de souhaits."
         ]
       }
     ]
   },
   {
-    slug: "allowance-vs-pocket-money",
-    title: "Allowance Or Pocket Money: What Should Parents Use?",
-    description: "A clear comparison of allowance and pocket money for families teaching children money habits.",
-    category: "Pocket money",
-    readingTime: "6 min read",
+    slug: "allocation-ou-argent-de-poche",
+    title: "Allocation ou argent de poche : que choisir ?",
+    description: "Une comparaison claire pour les familles qui enseignent les habitudes d'argent aux enfants.",
+    category: "Argent de poche",
+    readingTime: "6 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Allowance and pocket money are often used as the same idea. The useful question is not the name, but the rule behind it.",
+      "Allocation et argent de poche designent souvent la meme idee. La question utile n'est pas le nom, mais la regle derriere.",
     sections: [
       {
-        heading: "Fixed money teaches planning",
+        heading: "Un montant fixe enseigne la planification",
         body: [
-          "A regular amount helps children plan. They know what arrives and when. That predictability creates responsibility.",
-          "If money appears only after asking, children learn persuasion more than planning."
+          "Un montant regulier aide les enfants a planifier. Ils savent ce qui arrive et quand. Cette previsibilite cree de la responsabilite.",
+          "Si l'argent apparait seulement apres une demande, les enfants apprennent davantage la persuasion que la planification."
         ]
       },
       {
-        heading: "Task-based money teaches exchange",
+        heading: "L'argent lie aux taches enseigne l'echange",
         body: [
-          "Paying for extra tasks can be useful, but it should be separate from basic family contribution.",
-          "If every helpful action becomes a paid transaction, the family can lose the sense of shared responsibility."
+          "Payer certaines taches supplementaires peut etre utile, mais cela devrait rester separe de la contribution familiale de base.",
+          "Si chaque geste utile devient une transaction payee, la famille peut perdre le sens de la responsabilite partagee."
         ]
       },
       {
-        heading: "Use both carefully",
+        heading: "Utilisez les deux avec prudence",
         body: [
-          "A simple model is regular pocket money for planning, plus occasional extra earning opportunities for special effort.",
-          "The key is clarity. Children should know which money is predictable and which money is earned."
+          "Un modele simple : argent de poche regulier pour planifier, plus occasions ponctuelles de gagner davantage pour un effort particulier.",
+          "La cle est la clarte. Les enfants doivent savoir quel argent est previsible et quel argent est gagne."
         ]
       },
       {
-        heading: "Put the rule where everyone can see it",
+        heading: "Placez la regle la ou chacun la voit",
         body: [
-          "A visible rule prevents repeated arguments. The parent does not need to remember every exception.",
-          "The child can learn from the structure instead of negotiating around it."
+          "Une regle visible evite les disputes repetees. Le parent n'a pas besoin de se souvenir de chaque exception.",
+          "L'enfant peut apprendre de la structure au lieu de negocier autour d'elle."
         ]
       }
     ]
   },
   {
-    slug: "parental-control-vs-financial-independence",
-    title: "Parental Control Vs Financial Independence",
-    description: "How parents can guide children's money choices without controlling every decision.",
-    category: "Parenting",
-    readingTime: "8 min read",
+    slug: "controle-parental-et-autonomie-financiere",
+    title: "Controle parental et autonomie financiere",
+    description: "Comment guider les choix d'argent des enfants sans controler chaque decision.",
+    category: "Parentalite",
+    readingTime: "8 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Children need boundaries and freedom at the same time. Money is one of the best places to build that balance.",
+      "Les enfants ont besoin de limites et de liberte en meme temps. L'argent est l'un des meilleurs terrains pour construire cet equilibre.",
     sections: [
       {
-        heading: "Control feels safe but teaches less",
+        heading: "Le controle rassure mais enseigne moins",
         body: [
-          "When parents approve every small decision, mistakes are prevented. But learning is also delayed.",
-          "A child who never manages small choices may meet bigger choices later without practice."
+          "Quand les parents valident chaque petite decision, les erreurs sont evitees. Mais l'apprentissage est aussi repousse.",
+          "Un enfant qui ne gere jamais de petits choix peut rencontrer de plus grands choix plus tard sans entrainement."
         ]
       },
       {
-        heading: "Freedom needs visible boundaries",
+        heading: "La liberte a besoin de limites visibles",
         body: [
-          "Independence does not mean unlimited access. It means the child can make real decisions inside a clear frame.",
-          "The frame can include spending limits, approval thresholds and simple saving rules."
+          "L'autonomie ne signifie pas acces illimite. Elle signifie que l'enfant peut prendre de vraies decisions dans un cadre clair.",
+          "Ce cadre peut inclure des limites de depense, des seuils de validation et des regles d'epargne simples."
         ]
       },
       {
-        heading: "Use approvals for conversation",
+        heading: "Utilisez les validations pour parler",
         body: [
-          "A request is not only a yes-or-no moment. It is a chance to ask: what is this for, what changes after this, and is there another option?",
-          "That conversation is where financial judgement grows."
+          "Une demande n'est pas seulement un oui ou un non. C'est l'occasion de demander : a quoi cela sert, qu'est-ce qui change apres, et existe-t-il une autre option ?",
+          "C'est dans cette conversation que le jugement financier grandit."
         ]
       },
       {
-        heading: "Increase freedom gradually",
+        heading: "Augmentez la liberte progressivement",
         body: [
-          "As the child shows reliability, widen the frame. More responsibility should come with more visibility, not less.",
-          "This turns independence into a path, not a sudden handover."
+          "Quand l'enfant montre de la fiabilite, elargissez le cadre. Plus de responsabilite doit venir avec plus de visibilite, pas moins.",
+          "L'autonomie devient alors un chemin, pas un passage brutal."
         ]
       }
     ]
   },
   {
-    slug: "safe-money-app-for-children",
-    title: "What Makes A Money App Safe For Children?",
-    description: "A parent-focused checklist for safe educational money tools and family finance apps.",
-    category: "Safety",
-    readingTime: "7 min read",
+    slug: "application-argent-sure-enfants",
+    title: "Qu'est-ce qui rend une application d'argent sure pour les enfants ?",
+    description: "Une checklist parentale pour evaluer les outils educatifs d'argent et les apps familiales.",
+    category: "Securite",
+    readingTime: "7 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-          "A money app for children should teach financial habits without exposing children to unnecessary risk, advertising or pressure.",
+      "Une application d'argent pour enfants doit enseigner les habitudes financieres sans exposer les enfants a des risques, publicites ou pressions inutiles.",
     sections: [
       {
-        heading: "Educational purpose comes first",
+        heading: "La finalite educative passe d'abord",
         body: [
-          "A safe family money tool should make the family conversation easier. It should not push children toward spending, subscriptions or financial products.",
-          "The product should be clear about what it is: an educational system, not a real bank account."
+          "Un outil familial sur l'argent doit rendre la conversation plus simple. Il ne doit pas pousser les enfants vers la depense, les abonnements ou les produits financiers.",
+          "Le produit doit etre clair sur ce qu'il est : un systeme educatif, pas un vrai compte bancaire."
         ]
       },
       {
-        heading: "Parents stay in the loop",
+        heading: "Les parents restent dans la boucle",
         body: [
-          "Children can have their own view, but parents need visibility into rules, requests and balances.",
-          "Safety comes from shared context, not from hiding the child's choices until something goes wrong."
+          "Les enfants peuvent avoir leur propre vue, mais les parents ont besoin de voir les regles, demandes et soldes.",
+          "La securite vient du contexte partage, pas du fait de cacher les choix de l'enfant jusqu'a ce qu'un probleme arrive."
         ]
       },
       {
-        heading: "No unnecessary data collection",
+        heading: "Pas de collecte de donnees inutile",
         body: [
-          "Ask what data the product truly needs. A practice money system does not need the same data as a real financial institution.",
-          "The less sensitive data collected, the lower the risk for the family."
+          "Demandez quelles donnees le produit a vraiment besoin. Un systeme d'argent d'entrainement n'a pas besoin des memes donnees qu'une institution financiere reelle.",
+          "Moins les donnees sensibles sont collectees, plus le risque familial diminue."
         ]
       },
       {
-        heading: "A sandbox matters",
+        heading: "Un sandbox compte",
         body: [
-          "A sandbox lets parents explore the flow without committing family data.",
-          "That is especially useful for trust. Parents can understand the product before inviting children into it."
+          "Un sandbox permet aux parents d'explorer le parcours sans engager de donnees familiales.",
+          "C'est particulierement utile pour la confiance. Les parents comprennent le produit avant d'y inviter les enfants."
         ]
       }
     ]
   },
   {
-    slug: "family-finance-dashboard",
-    title: "Why A Family Finance Dashboard Helps Children Learn",
-    description: "How a shared parent-child dashboard turns money into a visible learning system.",
-    category: "Product",
-    readingTime: "6 min read",
+    slug: "tableau-financier-familial",
+    title: "Pourquoi un tableau financier familial aide les enfants a apprendre",
+    description: "Comment un tableau parent-enfant transforme l'argent en systeme d'apprentissage visible.",
+    category: "Produit",
+    readingTime: "6 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "A family finance dashboard is not about complexity. It is about putting the important facts in one calm place.",
+      "Un tableau financier familial n'est pas une question de complexite. Il s'agit de placer les faits importants dans un endroit calme.",
     sections: [
       {
-        heading: "Visibility reduces emotion",
+        heading: "La visibilite reduit l'emotion",
         body: [
-          "Arguments grow when people remember different facts. A dashboard gives the family one shared source of truth.",
-          "Balance, request and rule can be seen together."
+          "Les disputes grandissent quand chacun se souvient de faits differents. Un tableau donne a la famille une source commune de verite.",
+          "Solde, demande et regle peuvent etre vus ensemble."
         ]
       },
       {
-        heading: "Children learn from feedback",
+        heading: "Les enfants apprennent par retour immediat",
         body: [
-          "When a child sees the result of a choice immediately, learning becomes concrete.",
-          "Spending changes the balance. Saving keeps options open. A request creates a conversation."
+          "Quand un enfant voit tout de suite le resultat d'un choix, l'apprentissage devient concret.",
+          "Depenser change le solde. Epargner garde des options ouvertes. Une demande cree une conversation."
         ]
       },
       {
-        heading: "Parents can guide without hovering",
+        heading: "Les parents guident sans surveiller sans cesse",
         body: [
-          "A dashboard lets parents see what matters without asking constant questions.",
-          "That creates more trust. The child has space, and the parent still has context."
+          "Un tableau permet aux parents de voir ce qui compte sans poser constamment des questions.",
+          "Cela cree plus de confiance. L'enfant a de l'espace, et le parent garde le contexte."
         ]
       },
       {
-        heading: "Keep it simple",
+        heading: "Gardez la simplicite",
         body: [
-          "A family dashboard should not look like corporate finance software.",
-          "The best version is simple enough for a child and useful enough for a parent."
+          "Un tableau familial ne doit pas ressembler a un logiciel de finance d'entreprise.",
+          "La meilleure version est assez simple pour un enfant et assez utile pour un parent."
         ]
       }
     ]
   },
   {
-    slug: "kids-and-interest",
-    title: "How To Explain Interest To Children",
-    description: "A simple way to teach children interest, saving bonuses and time-based money growth.",
-    category: "Financial literacy",
-    readingTime: "7 min read",
+    slug: "expliquer-les-interets-aux-enfants",
+    title: "Comment expliquer les interets aux enfants",
+    description: "Une facon simple d'enseigner les interets, les bonus d'epargne et la croissance dans le temps.",
+    category: "Education financiere",
+    readingTime: "7 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Interest is easier for children to understand when it is shown as a reward for waiting and planning.",
+      "Les interets sont plus faciles a comprendre lorsqu'ils sont presentes comme une recompense de l'attente et de la planification.",
     sections: [
       {
-        heading: "Start with the idea of time",
+        heading: "Commencez par l'idee du temps",
         body: [
-          "Children understand waiting before they understand finance. Use that. Money kept for longer can grow because the child chose not to spend it immediately.",
-          "This turns interest into a story about patience, not a formula."
+          "Les enfants comprennent l'attente avant de comprendre la finance. Utilisez cela. L'argent garde plus longtemps peut grandir parce que l'enfant a choisi de ne pas le depenser tout de suite.",
+          "Les interets deviennent alors une histoire de patience, pas une formule."
         ]
       },
       {
-        heading: "Use small visible bonuses",
+        heading: "Utilisez de petits bonus visibles",
         body: [
-          "A small saving bonus can make the idea concrete. The child sees that a balance can grow through behaviour, not only through new pocket money.",
-          "Keep the number simple and explain it repeatedly in the same words."
+          "Un petit bonus d'epargne rend l'idee concrete. L'enfant voit qu'un solde peut grandir grace a un comportement, pas seulement grace a un nouvel argent de poche.",
+          "Gardez le nombre simple et expliquez-le plusieurs fois avec les memes mots."
         ]
       },
       {
-        heading: "Avoid unrealistic promises",
+        heading: "Evitez les promesses irreelles",
         body: [
-          "Educational interest is a teaching tool. It should not create false expectations about real-world returns.",
-          "Parents should explain the difference between a family learning rule and a real financial product."
+          "L'interet educatif est un outil d'apprentissage. Il ne doit pas creer de fausses attentes sur les rendements du monde reel.",
+          "Les parents doivent expliquer la difference entre une regle familiale d'apprentissage et un vrai produit financier."
         ]
       },
       {
-        heading: "Connect interest to patience",
+        heading: "Reliez les interets a la patience",
         body: [
-          "Interest makes more sense when it is connected to waiting and keeping money for later.",
-          "Show the child how patience changes the balance, without needing to track what they might buy."
+          "Les interets ont plus de sens lorsqu'ils sont lies a l'attente et a l'argent garde pour plus tard.",
+          "Montrez a l'enfant comment la patience change le solde, sans devoir suivre ce qu'il pourrait acheter."
         ]
       }
     ]
   },
   {
-    slug: "money-conversations-with-children",
-    title: "How To Talk To Children About Money Calmly",
-    description: "Practical language parents can use to make money conversations less tense and more useful.",
-    category: "Parenting",
-    readingTime: "8 min read",
+    slug: "parler-dargent-avec-les-enfants",
+    title: "Comment parler d'argent calmement avec les enfants",
+    description: "Des formulations pratiques pour rendre les conversations d'argent moins tendues et plus utiles.",
+    category: "Parentalite",
+    readingTime: "8 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "Money conversations become easier when parents use clear language, repeatable rules and fewer emotional surprises.",
+      "Les conversations d'argent deviennent plus faciles lorsque les parents utilisent un langage clair, des regles repetables et moins de surprises emotionnelles.",
     sections: [
       {
-        heading: "Name the decision",
+        heading: "Nommez la decision",
         body: [
-          "Instead of starting with yes or no, name what is being decided: spending, saving, borrowing, waiting or requesting.",
-          "That helps the child understand that money is not one big emotional topic. It is a set of choices."
+          "Au lieu de commencer par oui ou non, nommez ce qui se decide : depenser, epargner, emprunter, attendre ou demander.",
+          "Cela aide l'enfant a comprendre que l'argent n'est pas un grand sujet emotionnel unique. C'est un ensemble de choix."
         ]
       },
       {
-        heading: "Use questions that build judgement",
+        heading: "Posez des questions qui construisent le jugement",
         body: [
-          "Helpful questions include: what is this for, what will be left, what changes if you wait, and how will you feel tomorrow?",
-          "These questions slow the moment down without shaming the child."
+          "Les questions utiles : a quoi cela sert, que restera-t-il, qu'est-ce qui change si tu attends, et comment te sentiras-tu demain ?",
+          "Ces questions ralentissent le moment sans faire honte a l'enfant."
         ]
       },
       {
-        heading: "Do not make money equal love",
+        heading: "Ne rendez pas l'argent egal a l'amour",
         body: [
-          "Children can interpret money decisions emotionally. A refusal may feel like rejection.",
-          "Stable rules help separate the money answer from the relationship. The parent can stay warm while the boundary stays clear."
+          "Les enfants peuvent interpreter les decisions d'argent de maniere emotionnelle. Un refus peut ressembler a un rejet.",
+          "Des regles stables aident a separer la reponse d'argent de la relation. Le parent peut rester chaleureux pendant que la limite reste claire."
         ]
       },
       {
-        heading: "Return to the plan",
+        heading: "Revenez au plan",
         body: [
-          "The most useful phrase is often: let's look at the plan.",
-          "A shared plan gives both parent and child somewhere neutral to stand."
+          "La phrase la plus utile est souvent : regardons le plan.",
+          "Un plan partage donne au parent et a l'enfant un terrain neutre."
         ]
       }
     ]
   },
   {
-    slug: "weekly-family-money-routine",
-    title: "The Weekly Family Money Routine",
-    description: "A 10-minute routine for pocket money, savings, requests and better money habits.",
+    slug: "routine-hebdomadaire-argent-famille",
+    title: "La routine hebdomadaire d'argent en famille",
+    description: "Une routine de 10 minutes pour l'argent de poche, l'epargne, les demandes et de meilleures habitudes.",
     category: "Routine",
-    readingTime: "6 min read",
+    readingTime: "6 min de lecture",
     publishedAt,
     updatedAt: publishedAt,
     intro:
-      "A weekly family money routine works because it is short, predictable and focused on decisions that actually matter.",
+      "Une routine hebdomadaire d'argent fonctionne parce qu'elle est courte, previsible et concentree sur les decisions qui comptent vraiment.",
     sections: [
       {
-        heading: "Start with balances",
+        heading: "Commencez par les soldes",
         body: [
-          "Look at each child's balance and pending requests. Keep this factual. No long speech is needed.",
-          "The child should learn to read their own balance and understand the family rules."
+          "Regardez le solde de chaque enfant et les demandes en attente. Restez factuel. Un long discours n'est pas necessaire.",
+          "L'enfant doit apprendre a lire son propre solde et a comprendre les regles familiales."
         ]
       },
       {
-        heading: "Review requests",
+        heading: "Revoyez les demandes",
         body: [
-          "Pending requests are discussed calmly because the meeting already has a place for them.",
-          "Ask for the reason, check the balance and decide together where possible."
+          "Les demandes en attente se discutent calmement parce que la reunion leur donne deja une place.",
+          "Demandez la raison, verifiez le solde et decidez ensemble lorsque c'est possible."
         ]
       },
       {
-        heading: "Set one intention",
+        heading: "Fixez une intention",
         body: [
-          "Each child can choose one money intention for the week: save more, avoid impulse spending, or plan for a specific event.",
-          "One intention is enough. Too many targets make the routine heavy."
+          "Chaque enfant peut choisir une intention d'argent pour la semaine : epargner davantage, eviter les depenses impulsives ou planifier un evenement precis.",
+          "Une intention suffit. Trop d'objectifs rendent la routine lourde."
         ]
       },
       {
-        heading: "End quickly",
+        heading: "Terminez vite",
         body: [
-          "The routine should feel light enough to repeat. If it becomes a lecture, the child will avoid it.",
-          "Consistency is more valuable than intensity."
+          "La routine doit rester assez legere pour etre repetee. Si elle devient une lecon, l'enfant l'evitera.",
+          "La regularite vaut plus que l'intensite."
         ]
       }
     ]

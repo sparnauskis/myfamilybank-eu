@@ -11,9 +11,9 @@ Required GitHub repository secrets:
 
 Deployment target:
 
-- App directory: `/var/www/myfamilybank`
-- Systemd service: `myfamilybank`
-- Local app port: `3019`
-- Domains: `myfamilybank.eu`, `www.myfamilybank.eu`
+- App directory: `/var/www/banquedefamille`
+- Systemd service: `banquedefamille`
+- Local app port: `3020`
+- Domains: `banquedefamille.fr`, `www.banquedefamille.fr`
 
 The workflow uploads the source, runs `npm ci`, builds the Next.js app, creates a systemd service, configures Nginx and requests a Let's Encrypt certificate if one does not already exist.

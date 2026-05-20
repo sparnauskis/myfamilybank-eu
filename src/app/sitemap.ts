@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/content/articles";
 
-const baseUrl = "https://myfamilybank.eu";
+const baseUrl = "https://banquedefamille.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

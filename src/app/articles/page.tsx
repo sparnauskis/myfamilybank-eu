@@ -6,38 +6,38 @@ import SiteHeader from "@/components/SiteHeader";
 import { articles } from "@/content/articles";
 
 export const metadata: Metadata = {
-  title: "Family Money Articles | MyFamilyBank",
+  title: "Articles sur l'argent en famille | BanqueDeFamille",
   description:
-    "Practical articles for parents about pocket money, saving habits, family money agreements and financial literacy for kids.",
+    "Articles pratiques pour les parents sur l'argent de poche, l'epargne, les accords familiaux et l'education financiere des enfants.",
   alternates: {
     canonical: "/articles",
     languages: {
-      en: "https://myfamilybank.eu/articles",
-      "x-default": "https://myfamilybank.eu/articles"
+      fr: "https://banquedefamille.fr/articles",
+      "x-default": "https://banquedefamille.fr/articles"
     }
   },
   openGraph: {
-    title: "Family Money Articles | MyFamilyBank",
+    title: "Articles sur l'argent en famille | BanqueDeFamille",
     description:
-      "Practical articles for parents about pocket money, saving habits and financial literacy for kids.",
-    url: "https://myfamilybank.eu/articles",
-    siteName: "MyFamilyBank",
-    locale: "en_GB",
+      "Articles pratiques pour les parents sur l'argent de poche, l'epargne et l'education financiere des enfants.",
+    url: "https://banquedefamille.fr/articles",
+    siteName: "BanqueDeFamille",
+    locale: "fr_FR",
     type: "website",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "MyFamilyBank family money articles"
+        alt: "Articles BanqueDeFamille sur l'argent en famille"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Family Money Articles | MyFamilyBank",
+    title: "Articles sur l'argent en famille | BanqueDeFamille",
     description:
-      "Practical articles for parents about pocket money, saving habits and financial literacy for kids.",
+      "Articles pratiques pour les parents sur l'argent de poche, l'epargne et l'education financiere des enfants.",
     images: ["/og-image.svg"]
   }
 };
@@ -53,14 +53,14 @@ export default function ArticlesPage() {
         <div className="max-w-3xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-moss/10 bg-white/70 px-4 py-2 text-sm font-bold text-moss shadow-sm">
             <BookOpen size={16} />
-            Family money guide
+            Guide d'argent familial
           </div>
           <h1 className="text-5xl font-black leading-[1.05] tracking-normal text-ink md:text-7xl">
-            Practical money habits for calmer families.
+            Des habitudes d'argent pratiques pour des familles plus calmes.
           </h1>
           <p className="mt-6 text-lg leading-8 text-ink/70">
-            Guides for parents who want to teach children pocket money, saving, requests and financial
-            responsibility without turning every decision into a lecture.
+            Guides pour les parents qui veulent transmettre l'argent de poche, l'epargne, les demandes et la
+            responsabilite financiere sans transformer chaque decision en lecon.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function ArticlesPage() {
                 <p className="mt-4 leading-7 text-ink/65">{article.description}</p>
               </div>
               <div className="mt-8 inline-flex items-center gap-2 text-sm font-black text-coral">
-                Read article <ArrowRight size={17} />
+                Lire l'article <ArrowRight size={17} />
               </div>
             </Link>
           ))}
@@ -102,14 +102,14 @@ export default function ArticlesPage() {
       <section className="bg-moss px-5 py-16 text-white md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-7 md:flex-row md:items-center">
           <div className="max-w-2xl">
-            <p className="text-sm font-black uppercase tracking-[0.22em] text-white/45">Try it in practice</p>
-            <h2 className="mt-3 text-4xl font-black tracking-normal">Explore the family money sandbox.</h2>
+            <p className="text-sm font-black uppercase tracking-[0.22em] text-white/45">Essayez en pratique</p>
+            <h2 className="mt-3 text-4xl font-black tracking-normal">Explorez le sandbox d'argent familial.</h2>
           </div>
           <Link
             href="/sandbox"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-base font-black text-moss transition hover:bg-cream"
           >
-            Open Sandbox <ArrowRight size={20} />
+            Ouvrir le Sandbox <ArrowRight size={20} />
           </Link>
         </div>
       </section>

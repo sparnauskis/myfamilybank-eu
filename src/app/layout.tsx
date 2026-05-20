@@ -2,15 +2,15 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://myfamilybank.eu"),
-  title: "MyFamilyBank - Family money habits without daily arguments",
+  metadataBase: new URL("https://banquedefamille.fr"),
+  title: "BanqueDeFamille - L'argent de poche sans disputes quotidiennes",
   description:
-    "A warm family money PWA with free core education, editable multilingual interface text and a safe sandbox demo.",
+    "Une PWA familiale et chaleureuse pour l'argent de poche, l'education financiere, les textes d'interface modifiables et une demo sandbox securisee.",
   alternates: {
-    canonical: "https://myfamilybank.eu",
+    canonical: "https://banquedefamille.fr",
     languages: {
-      en: "https://myfamilybank.eu",
-      "x-default": "https://myfamilybank.eu"
+      fr: "https://banquedefamille.fr",
+      "x-default": "https://banquedefamille.fr"
     }
   },
   icons: {
@@ -20,27 +20,27 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
-    title: "MyFamilyBank",
+    title: "BanqueDeFamille",
     description:
-      "Teach children money through calm family agreements, pocket money and a safe sandbox demo.",
-    url: "https://myfamilybank.eu",
-    siteName: "MyFamilyBank",
+      "Aidez les enfants a comprendre l'argent grace a des accords familiaux simples, l'argent de poche et une demo sandbox securisee.",
+    url: "https://banquedefamille.fr",
+    siteName: "BanqueDeFamille",
     type: "website",
-    locale: "en_GB",
+    locale: "fr_FR",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "MyFamilyBank - family money habits without daily arguments"
+        alt: "BanqueDeFamille - l'argent de poche sans disputes quotidiennes"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "MyFamilyBank",
+    title: "BanqueDeFamille",
     description:
-      "Teach children money through calm family agreements, pocket money and a safe sandbox demo.",
+      "Aidez les enfants a comprendre l'argent grace a des accords familiaux simples, l'argent de poche et une demo sandbox securisee.",
     images: ["/og-image.svg"]
   },
   robots: {
@@ -60,25 +60,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "MyFamilyBank",
-      url: "https://myfamilybank.eu",
-      logo: "https://myfamilybank.eu/icon.svg",
+      name: "BanqueDeFamille",
+      url: "https://banquedefamille.fr",
+      logo: "https://banquedefamille.fr/icon.svg",
       description:
-        "An educational family finance PWA with free core learning, editable multilingual interface text, family agreements and a safe sandbox demo."
+        "Une PWA d'education financiere familiale avec un coeur pedagogique gratuit, des textes d'interface modifiables, des accords familiaux et une demo sandbox securisee."
     },
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "MyFamilyBank",
-      url: "https://myfamilybank.eu",
-      inLanguage: "en",
+      name: "BanqueDeFamille",
+      url: "https://banquedefamille.fr",
+      inLanguage: "fr",
       description:
-        "A warm family money Progressive Web App with free core learning, editable multilingual interface text, simple agreements and a safe sandbox demo."
+        "Une Progressive Web App familiale pour l'argent de poche, l'apprentissage gratuit, les textes d'interface modifiables, les accords simples et une demo sandbox securisee."
     }
   ];
 
   return (
-    <html lang="en">
+    <html lang="fr">
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {children}
